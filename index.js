@@ -29,7 +29,7 @@ else{
 	
 for (var i=0; i<katzDeliLine.length; i++) {
 
-newNumberArr[i]=(`${i+1}. ${katzDeliLine[i]}`);
+newNumberArr[i]=(` ${i+1}. ${katzDeliLine[i]}`);
 
   
 }
