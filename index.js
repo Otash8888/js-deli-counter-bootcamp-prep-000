@@ -25,6 +25,7 @@ function currentLine(katzDeliLine){
  return noPpl
 }
 else{
+  
   var newNumberArr= new Array()	 
 	
 for (var i=0; i<katzDeliLine.length; i++) {
