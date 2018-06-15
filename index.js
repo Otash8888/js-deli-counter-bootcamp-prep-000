@@ -25,9 +25,16 @@ function currentLine(katzDeliLine){
  return noPpl
 }
 else{
-  var currentlyWaiting =`The line is currently: 1. Bill, 2. Jane, 3. Ann`
+  var newNumberArr= new Array()	 
+	
+for (var i=0; i<katzDeliLine.length; i++) {
+
+newNumberArr[i]=(`${i+1}. ${katzDeliLine[i]}`);
+
   
-  return currentlyWaiting
+}
+  var currentlyWaiting='The line is currently:' +  newNumberArr.toString()
+  return currentlyWaiting 
   
 }
   /*  it('says who is in line when there are people waiting', () => {
