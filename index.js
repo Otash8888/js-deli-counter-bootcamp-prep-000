@@ -20,26 +20,22 @@ else{
 }
 }
 function currentLine(katzDeliLine){
-  if ( katzDeliLine.length===0){
+ 
+if ( katzDeliLine.length===0){
  var noPpl = "The line is currently empty.";
  return noPpl
 }
+
+
 else{
-  
-  var newNumberArr= new Array()	 
+var newNumberArr= new Array();	 
 	
 for (var i=0; i<katzDeliLine.length; i++) {
-
 newNumberArr[i]=(` ${i+1}. ${katzDeliLine[i]}`);
-
-  
 }
   var currentlyWaiting='The line is currently:' +  newNumberArr.toString()
   return currentlyWaiting 
   
 }
-  /*  it('says who is in line when there are people waiting', () => {
-      expect(currentLine(["Bill", "Jane", "Ann"])).toEqual("The line is currently: 1. Bill, 2. Jane, 3. Ann");
-    });*/
   
 }
